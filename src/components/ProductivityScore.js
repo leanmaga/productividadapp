@@ -35,17 +35,17 @@ export default function ProductivityScore() {
       <h3 className="text-lg font-semibold text-black">Puntaje:</h3>
       <p className="text-4xl font-bold text-black">{score}</p>
       <div className="w-full h-40 mt-4">
-        {/* {isClient && (
-        //   <ResponsiveContainer width="100%" height="100%">
-        //     <LineChart data={data}>
-        //       <CartesianGrid strokeDasharray="3 3" />
-        //       <XAxis dataKey="day" />
-        //       <YAxis />
-        //       <Tooltip />
-        //       <Line type="monotone" dataKey="score" stroke="#3b82f6" />
-        //     </LineChart>
-        //   </ResponsiveContainer>
-        )} */}
+        {isClient && (
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={data}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="day" />
+              <YAxis />
+              <Tooltip />
+              <Line type="monotone" dataKey="score" stroke="#3b82f6" />
+            </LineChart>
+          </ResponsiveContainer>
+        )}
       </div>
     </div>
   );
